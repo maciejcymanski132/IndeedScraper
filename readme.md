@@ -1,4 +1,4 @@
-#Indeed Webscraper
+# Indeed Webscraper
 
 Selenium based webscraper api which takes in search key,number of offer pages to scrape and number of parallel workers to work on and return gathered work offers text for each worker as json.
 Project is extended with small machine learning module which can tell what kind of industry given job is associated with.
