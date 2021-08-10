@@ -3,7 +3,7 @@ services:
   - docker
 python:
   - 3.9
-before_install:
+before_script:
   - pip install docker-compose
   - docker pull redis
   - docker pull selenium/standalone-firefox
