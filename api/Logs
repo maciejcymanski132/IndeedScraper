@@ -1,0 +1,461 @@
+2021-08-04 12:47:38,274:ERROR:Scraping took too long
+2021-08-04 12:47:55,483:ERROR:Scraping took too long
+2021-08-04 12:59:31,489:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 12:59:31,836:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 12:59:39,869:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 12:59:41,518:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 12:59:43,645:ERROR:Scraping took too long
+2021-08-04 12:59:45,285:ERROR:Scraping took too long
+2021-08-04 13:00:22,242:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:00:23,672:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:00:33,269:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:00:34,695:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:00:37,006:ERROR:Scraping took too long
+2021-08-04 13:00:38,421:ERROR:Scraping took too long
+2021-08-04 13:01:48,402:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:01:50,016:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:01:56,414:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:02:00,197:ERROR:Scraping took too long
+2021-08-04 13:02:01,033:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:02:04,788:ERROR:Scraping took too long
+2021-08-04 13:03:40,965:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:03:50,247:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:03:53,879:ERROR:Scraping took too long
+2021-08-04 13:04:30,941:WARNING:127.0.0.1:54334: request
+  -> HTTP protocol error in client request: Server disconnected
+2021-08-04 13:04:46,171:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:04:55,436:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:06:18,318:WARNING:Cannot open offer in worker_nr0
+Problematic url:https://www.indeed.com/jobs?q=javascript&start=00&vjk=eec039854b37e1be
+2021-08-04 13:06:18,318:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:06:18,333:WARNING:Cannot open offer in worker_nr1
+Problematic url:https://www.indeed.com/jobs?q=javascript&start=10&vjk=62a023d966e4f8e2
+2021-08-04 13:06:18,333:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:06:34,463:ERROR:Scraping took too long
+2021-08-04 13:06:37,780:ERROR:Scraping took too long
+2021-08-04 13:08:31,788:ERROR:Scraping took too long
+2021-08-04 13:08:35,450:ERROR:Scraping took too long
+2021-08-04 13:16:46,205:WARNING:Cannot open offer in worker_nr0
+Problematic url:https://www.indeed.com/jobs?q=javascript&start=00&vjk=eec039854b37e1be
+2021-08-04 13:16:46,205:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:16:47,389:WARNING:Cannot open offer in worker_nr1
+Problematic url:https://www.indeed.com/jobs?q=javascript&start=10&vjk=56614988f9b3820b
+2021-08-04 13:16:47,390:ERROR:Couldnt open new offer. Skipping to next one
+2021-08-04 13:17:04,460:ERROR:Scraping took too long
+2021-08-04 13:17:06,568:ERROR:Scraping took too long
+2021-08-04 13:27:14,444:ERROR:Scraping took too long
+2021-08-04 13:27:16,844:ERROR:Scraping took too long
+2021-08-04 13:42:01,446:ERROR:Scraping took too long in worker 0
+2021-08-04 13:42:01,900:ERROR:Scraping took too long in worker 1
+2021-08-04 13:55:24,098:ERROR:Scraping took too long in worker 1
+2021-08-04 13:55:27,715:ERROR:Scraping took too long in worker 0
+2021-08-04 15:08:41,199:ERROR:Scraping took too long in worker 1
+2021-08-04 15:09:10,534:ERROR:Scraping took too long in worker 0
+2021-08-05 12:52:37,594:ERROR:Scraping took too long in worker 0
+2021-08-05 12:52:42,337:ERROR:Scraping took too long in worker 1
+2021-08-05 12:53:30,499:ERROR:Scraping took too long in worker 0
+2021-08-05 12:53:34,506:ERROR:Scraping took too long in worker 1
+2021-08-05 12:56:18,226:ERROR:Scraping took too long in worker 1
+2021-08-05 12:56:49,707:WARNING:127.0.0.1:64239: request
+  -> HTTP protocol error in client request: Server disconnected
+2021-08-05 12:58:56,929:WARNING:127.0.0.1:64692: request
+  -> HTTP protocol error in client request: Server disconnected
+2021-08-05 12:59:02,157:ERROR:Scraping took too long in worker 1
+2021-08-05 13:00:01,751:WARNING:127.0.0.1:59342: request
+  -> HTTP protocol error in client request: Server disconnected
+2021-08-05 13:01:06,966:ERROR:Scraping took too long in worker 1
+2021-08-05 13:01:54,414:ERROR:Scraping took too long in worker 0
+2021-08-05 13:01:55,204:ERROR:Scraping took too long in worker 1
+2021-08-05 13:04:08,493:ERROR:Scraping took too long in worker 1
+2021-08-05 13:04:09,980:ERROR:Scraping took too long in worker 0
+2021-08-05 13:05:22,069:ERROR:Scraping took too long in worker 0
+2021-08-05 13:05:25,967:ERROR:Scraping took too long in worker 1
+2021-08-05 13:06:36,412:ERROR:Scraping took too long in worker 1
+2021-08-05 13:06:36,870:ERROR:Scraping took too long in worker 0
+2021-08-05 13:09:56,822:ERROR:Scraping took too long in worker 1
+2021-08-05 13:10:18,080:WARNING:127.0.0.1:57905: request
+  -> HTTP protocol error in client request: Server disconnected
+2021-08-05 13:12:38,053:ERROR:Scraping took too long in worker 1
+2021-08-05 13:12:39,057:ERROR:Scraping took too long in worker 0
+2021-08-05 13:13:44,555:ERROR:Scraping took too long in worker 0
+2021-08-05 13:13:44,889:ERROR:Scraping took too long in worker 1
+2021-08-05 13:25:04,047:ERROR:Scraping took too long in worker 0
+2021-08-05 13:25:08,244:ERROR:Scraping took too long in worker 1
+2021-08-05 13:26:21,980:ERROR:Scraping took too long in worker 0
+2021-08-05 13:27:08,067:ERROR:Scraping took too long in worker 1
+2021-08-05 13:27:13,313:ERROR:Scraping took too long in worker 0
+2021-08-05 13:30:50,949:ERROR:Scraping took too long in worker 0
+2021-08-05 13:30:55,070:ERROR:Scraping took too long in worker 1
+2021-08-05 13:31:54,974:ERROR:Scraping took too long in worker 0
+2021-08-05 13:31:56,158:ERROR:Scraping took too long in worker 1
+2021-08-05 13:32:58,078:ERROR:Scraping took too long in worker 1
+2021-08-05 13:32:59,607:ERROR:Scraping took too long in worker 0
+2021-08-05 13:34:43,503:ERROR:Scraping took too long in worker 1
+2021-08-05 13:34:45,417:ERROR:Scraping took too long in worker 0
+2021-08-05 13:35:52,448:ERROR:Scraping took too long in worker 1
+2021-08-05 13:35:58,405:ERROR:Scraping took too long in worker 0
+2021-08-05 13:36:56,851:ERROR:Scraping took too long in worker 0
+2021-08-05 13:37:00,399:ERROR:Scraping took too long in worker 1
+2021-08-06 14:12:57,658:ERROR:Scraping took too long in worker 0
+2021-08-06 14:15:01,873:ERROR:Scraping took too long in worker 1
+2021-08-06 14:15:03,789:ERROR:Scraping took too long in worker 0
+2021-08-06 17:22:29,272:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 19, in jobs
+    do_scraping(workers=workers,pages=pages,work=work)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 311, in do_scraping
+    Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 1041, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 299, in scrape
+    scraper.scrape_page(timeout=10)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 243, in scrape_page
+    self.save_results()
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 253, in save_results
+    search_df = decompress(redis_con.get(self.search_field))
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+2021-08-06 17:22:51,392:INFO:Shutting down
+2021-08-06 17:22:51,507:INFO:Waiting for application shutdown.
+2021-08-06 17:22:51,507:INFO:Application shutdown complete.
+2021-08-06 17:22:51,507:INFO:Finished server process [10740]
+2021-08-06 17:23:54,823:INFO:Shutting down
+2021-08-06 17:23:54,938:INFO:Waiting for application shutdown.
+2021-08-06 17:23:54,938:INFO:Application shutdown complete.
+2021-08-06 17:23:54,938:INFO:Finished server process [16228]
+2021-08-06 17:25:08,963:WARNING:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C39893FD00>: Failed to establish a new connection: [WinError 10061] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia')': /wd/hub/session
+2021-08-06 17:25:11,001:WARNING:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C39893F6A0>: Failed to establish a new connection: [WinError 10061] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia')': /wd/hub/session
+2021-08-06 17:25:13,018:WARNING:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C397AA0E50>: Failed to establish a new connection: [WinError 10061] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia')': /wd/hub/session
+2021-08-06 17:25:15,057:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 19, in jobs
+    do_scraping(workers=workers,pages=pages,work=work)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 311, in do_scraping
+    Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 1041, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 288, in scrape
+    scraper = Scraper(worker_nr=page, search_key=work, location="")
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 64, in __init__
+    self.driver = webdriver.Remote(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\seleniumwire\webdriver.py", line 196, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 402, in _request
+    resp = http.request(method, url, body=body, headers=headers)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4446): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C397AA0580>: Failed to establish a new connection: [WinError 10061] Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia'))
+2021-08-06 17:29:06,161:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 19, in jobs
+    do_scraping(workers=workers,pages=pages,work=work)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 311, in do_scraping
+    Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 1054, in __call__
+    self.retrieve()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 933, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 438, in result
+    return self.__get_result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 390, in __get_result
+    raise self._exception
+redis.exceptions.ResponseError: Background save already in progress
+2021-08-06 17:32:12,639:INFO:Shutting down
+2021-08-06 17:32:12,755:INFO:Waiting for application shutdown.
+2021-08-06 17:32:12,755:INFO:Application shutdown complete.
+2021-08-06 17:32:12,755:INFO:Finished server process [14800]
+2021-08-06 18:18:04,794:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 19, in jobs
+    do_scraping(workers=workers,pages=pages,work=work)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 310, in do_scraping
+    Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 1041, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\joblib\parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 298, in scrape
+    scraper.scrape_page(timeout=10)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 242, in scrape_page
+    self.save_results()
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 252, in save_results
+    search_df = decompress(redis_con.get(self.search_field))
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedscraper\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+2021-08-06 18:18:32,664:INFO:Shutting down
+2021-08-06 18:18:32,780:INFO:Waiting for application shutdown.
+2021-08-06 18:18:32,780:INFO:Application shutdown complete.
+2021-08-06 18:18:32,780:INFO:Finished server process [18400]
+2021-08-08 10:05:23,777:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 19, in jobs
+    do_scraping(workers=workers,pages=pages,work=work)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 309, in do_scraping
+    Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\parallel.py", line 1041, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\joblib\parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 288, in scrape
+    scraper.scrape_page(timeout=10)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 241, in scrape_page
+    self.save_results()
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\ScraperClass.py", line 251, in save_results
+    search_df = decompress(redis_con.get(self.search_field))
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\redis\client.py", line 1606, in get
+    return self.execute_command('GET', name)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\redis\client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\redis\connection.py", line 1192, in get_connection
+    connection.connect()
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\redis\connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Nie mo¿na nawi¹zaæ po³¹czenia, poniewa¿ komputer docelowy aktywnie go odmawia.
+2021-08-08 10:06:23,834:ERROR:Scraping took too long in worker 0
+2021-08-08 10:06:23,845:ERROR:Exception in ASGI application
+Traceback (most recent call last):
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\routing.py", line 219, in app
+    raw_response = await run_endpoint_function(
+  File "c:\users\cyman\desktop\vedant_mentorcruz\mentor_cruz_pavan\indeedvenv\lib\site-packages\fastapi\routing.py", line 152, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Cyman\Desktop\vedant_mentorcruz\mentor_cruz_pavan\.\main.py", line 23, in jobs
+    model = pickle.load(training_model)
+ModuleNotFoundError: No module named 'sklearn'
+2021-08-08 10:10:09,410:INFO:Shutting down
+2021-08-08 10:10:09,518:INFO:Waiting for application shutdown.
+2021-08-08 10:10:09,518:INFO:Application shutdown complete.
+2021-08-08 10:10:09,518:INFO:Finished server process [6944]
