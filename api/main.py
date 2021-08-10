@@ -3,8 +3,10 @@ from classes.ScraperClass import *
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-app = FastAPI()
+import scripts
 
+app = FastAPI()
+scripts.setdb.set_keys(redis_con)
 
 learning_jobs = ["software engineer","data scientist","frontend developer",
                  "dev ops","tester"]
@@ -19,10 +21,9 @@ def read_root():
 async def jobs(workers: int = 1,pages: int=1,work: str=""):
     do_scraping(workers=workers,pages=pages,work=work)
     my_d={"job_offers": {job:{} for job in learning_jobs}}
-    print(my_d)
-    with open('../ml_models/text_classifier', 'rb') as training_model:
+    with open('ml_models/text_classifier', 'rb') as training_model:
         model = pickle.load(training_model)
-    with open('../ml_models/vectorizer', 'rb') as vectorizer:
+    with open('ml_models/vectorizer', 'rb') as vectorizer:
         vectorizer = pickle.load(vectorizer)
 
     if work not in learning_jobs:
@@ -49,11 +50,6 @@ async def jobs(workers: int = 1,pages: int=1,work: str=""):
 def read_d():
     print(redis_con.ping())
     print('dziala')
-    firefox_options = webdriver.FirefoxOptions()
-    driver = webdriver.Remote(command_executor='selenium',
-                              options=firefox_options)
-    # driver.get('https://www.youtube.com/watch?v=UzwnM13Na8E')
-    driver.close()
     return {"Hello": "World"}
 
 if __name__ == '__main__':

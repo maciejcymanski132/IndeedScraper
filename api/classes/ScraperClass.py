@@ -11,6 +11,7 @@ import os
 compressed_df = zlib.compress(pickle.dumps(pd.DataFrame()))
 used_proxies = []
 result_dict = {}
+firefox_options = webdriver.FirefoxOptions()
 
 redis_con = redis.Redis(host='redis')
 
@@ -61,8 +62,8 @@ class Scraper:
         self.url = f"https://indeed.com/jobs?q={self.search_field}&l={self.location}&start={self.worker_nr}0"
         self.proxy = draw_proxy(proxy_list)
         self.driver = webdriver.Remote(
-                command_executor='http://172.17.0.2:4444/wd/hub',
-                desired_capabilities=DesiredCapabilities.FIREFOX)
+                command_executor='http://selenium:4444/wd/hub',
+                options=firefox_options)
         self.results = {"label": self.search_field, "offers": []}
         logging.basicConfig(
             filename=f"../Logs",
@@ -283,7 +284,9 @@ def scrape(page: int, work: str) -> None:
     :param work:Searched job description
     :return:
     """
+
     scraper = Scraper(worker_nr=page, search_key=work, location="")
+
     try:
         scraper.scrape_page(timeout=10)
     except selenium.common.exceptions.StaleElementReferenceException:
@@ -306,6 +309,7 @@ def do_scraping(workers: int, pages: int, work: str):
     :param pages: Number of pages to be scraped
     :param work: Searched job description
     """
+
     Parallel(n_jobs=workers, verbose=100, pre_dispatch="2*n_jobs", batch_size="auto")(
         delayed(scrape)(page, work) for page in range(0, pages)
     )
