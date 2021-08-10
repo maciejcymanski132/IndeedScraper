@@ -3,10 +3,10 @@ from classes.ScraperClass import *
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-import scripts
+from scripts.setdb import set_keys
 
 app = FastAPI()
-scripts.setdb.set_keys(redis_con)
+set_keys(redis_con)
 
 learning_jobs = ["software engineer","data scientist","frontend developer",
                  "dev ops","tester"]

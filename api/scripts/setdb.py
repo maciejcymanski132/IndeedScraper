@@ -1,6 +1,6 @@
 import redis
 import pandas as pd
-from api.classes.ScraperClass import compress
+from scripts.create_models import compress
 
 
 def set_keys(re_con):
