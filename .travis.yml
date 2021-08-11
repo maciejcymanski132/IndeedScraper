@@ -8,4 +8,4 @@ before_script:
   - docker pull redis
   - docker pull selenium/standalone-firefox
 script:
-  - docker-compose up
+  - docker-compose up -d
