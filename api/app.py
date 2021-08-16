@@ -3,7 +3,7 @@ from api.classes.ScraperClass import *
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from scripts.setdb import set_keys
+from api.scripts.setdb import set_keys
 
 app = FastAPI()
 set_keys(redis_con)
