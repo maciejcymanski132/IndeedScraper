@@ -1,6 +1,6 @@
 import redis
 import pandas as pd
-from scripts.create_models import compress
+from api.scripts.create_models import compress
 
 
 def set_keys(re_con):
