@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from classes.ScraperClass import *
+from api.classes.ScraperClass import *
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
