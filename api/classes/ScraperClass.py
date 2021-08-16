@@ -1,17 +1,17 @@
 from selenium import common
 from joblib import Parallel, delayed
-from classes.proxies import proxy_list
 import pickle, random,  time, zlib
 import pandas as pd
 import redis
-from classes.SwappedFramesClass import *
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-import os
+try:
+    from api.classes.proxies import proxy_list
+    from api.classes.SwappedFramesClass import *
+except ModuleNotFoundError:
+    from classes.proxies import proxy_list
+    from classes.SwappedFramesClass import *
 
 compressed_df = zlib.compress(pickle.dumps(pd.DataFrame()))
 used_proxies = []
-result_dict = {}
-firefox_options = webdriver.FirefoxOptions()
 
 redis_con = redis.Redis(host='redis')
 
@@ -61,15 +61,18 @@ class Scraper:
         self.worker_nr = worker_nr
         self.url = f"https://indeed.com/jobs?q={self.search_field}&l={self.location}&start={self.worker_nr}0"
         self.proxy = draw_proxy(proxy_list)
-        self.driver = webdriver.Remote(
-                command_executor='http://selenium:4444/wd/hub',
-                options=firefox_options)
         self.results = {"label": self.search_field, "offers": []}
         logging.basicConfig(
             filename=f"../Logs",
             level=logging.WARNING,
             format="%(asctime)s:%(levelname)s:%(message)s",
         )
+
+    def setup_driver(self,executor='http://selenium:4444/wd/hub',
+                     browser_options=webdriver.FirefoxOptions()):
+        self.driver = webdriver.Remote(
+                command_executor=executor,
+                options=browser_options)
 
     def close_privacy_agreement(self) -> None:
         """
@@ -86,6 +89,7 @@ class Scraper:
                 "onetrust-accept-btn-handler"
             )
             privacy_agreement_button.click()
+            time.sleep(2)
         except selenium.common.exceptions.NoSuchElementException:
             pass
 
@@ -101,6 +105,7 @@ class Scraper:
             close_pop_up = self.driver.find_element_by_id("popover-x")
             close_button = close_pop_up.find_element_by_tag_name("button")
             close_button.click()
+            time.sleep(2)
         except selenium.common.exceptions.NoSuchElementException:
             pass
 
@@ -113,9 +118,9 @@ class Scraper:
         """
         try:
             navigation = self.driver.find_element_by_class_name("pagination-list")
-            page_list = navigation.find_elements_by_tag_name("a")
-            page_list[-1].click()
-            time.sleep(1)
+            next_button = navigation.find_elements_by_tag_name("a")[-1]
+            next_button.click()
+            next_button.click()
         except selenium.common.exceptions.NoSuchElementException as exception:
             raise Exception(
                 f"Function: next_page() havent proceed in worker{self.worker_nr}"
@@ -230,6 +235,7 @@ class Scraper:
         :param timeout: Time given for page to load (seconds)
         :return:
         """
+        self.setup_driver()
         self.driver.get(self.url)
         self.driver.set_page_load_timeout(timeout)
         self.check_for_pop_up()

@@ -8,4 +8,10 @@ before_script:
   - docker pull redis
   - docker pull selenium/standalone-firefox
 script:
-  - docker-compose up
+  - docker-compose up -d
+env:
+  - HEROKU_API_TOKEN=${{ secrets.HEROKU_API_TOKEN }}
+  - HEROKU_APP_NAME=${{ secrets.HEROKU_APP_NAME }}
+after_success:
+  -git remote add heroku https://heroku:$HEROKU_API_TOKEN@git.heroku.com/$HEROKU_APP_NAME.git
+
