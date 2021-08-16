@@ -1,7 +1,9 @@
 import redis
 import pandas as pd
-from api.scripts.create_models import compress
-
+try:
+    from api.scripts.create_models import compress
+except ModuleNotFoundError:
+    from scripts.create_models import compress
 
 def set_keys(re_con):
     df = pd.DataFrame(columns=['label','text'])

@@ -1,9 +1,13 @@
 from fastapi import FastAPI
-from api.classes.ScraperClass import *
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from api.scripts.setdb import set_keys
+try:
+    from api.classes.ScraperClass import *
+    from api.scripts.setdb import set_keys
+except ModuleNotFoundError:
+    from classes.ScraperClass import *
+    from scripts.setdb import set_keys
 
 app = FastAPI()
 set_keys(redis_con)
