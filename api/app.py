@@ -1,7 +1,6 @@
 from fastapi import FastAPI
-import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from os import environ
+
 try:
     from api.classes.ScraperClass import *
     from api.scripts.setdb import set_keys
@@ -55,3 +54,4 @@ def read_d():
     print(redis_con.ping())
     print('dziala')
     return {"Hello": "World"}
+
