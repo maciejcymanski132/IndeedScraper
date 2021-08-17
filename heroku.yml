@@ -1,5 +1,5 @@
 build:
   docker:
     api: api/Dockerfile
-    redis: redis_server/Dockerfile
-    selenium: selenium_server/Dockerfile
+    redis: redis
+    selenium: selenium/standalone-firefox
