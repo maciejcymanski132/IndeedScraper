@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from os import environ
-import uvicorn
 
 try:
     from api.classes.ScraperClass import *
@@ -56,5 +55,3 @@ def read_d():
     print('dziala')
     return {"Hello": "World"}
 
-if __name__ == '__main__':
-    uvicorn.run("app:app", host='0.0.0.0', port=environ.get('PORT', 5000))

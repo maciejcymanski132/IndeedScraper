@@ -12,5 +12,5 @@ EXPOSE 5000
 
 COPY . /code
 
-CMD ["uvicorn", "app:app", "--host=0.0.0.0", "--port", '$PORT']
+CMD ["python3","app.py"]
 
