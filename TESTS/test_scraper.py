@@ -109,4 +109,4 @@ class TestScraper(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    print('ee')
+    unittest.main()
