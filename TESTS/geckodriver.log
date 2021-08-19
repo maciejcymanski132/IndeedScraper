@@ -1168,16 +1168,19 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629366971427	Marionette	INFO	Listening on port 55381
 1629366971901	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: uncaught exception: undefined
-1629366981754	geckodriver	INFO	Listening on 127.0.0.1:55465
-1629366982286	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileSaqMzU"
-*** You are running in headless mode.
-1629366982594	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileSaqMzU\\search.json.mozlz4", (void 0)))
-1629366983643	Marionette	INFO	Listening on port 55473
-1629366983843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: , line 0: uncaught exception: undefined
-1629366996155	Marionette	INFO	Stopped listening on port 55473
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+1629367381193	Marionette	INFO	Stopped listening on port 55381
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+ette	INFO	Stopped listening on port 55473
 JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
 1629366996766	geckodriver	INFO	Listening on 127.0.0.1:55557
 1629366997308	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileMUKSk0"
@@ -1228,24 +1231,33 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629367059529	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
-
-1629367068503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileORRAU3"
-*** You are running in headless mode.
-1629367068788	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileORRAU3\\search.json.mozlz4", (void 0)))
-1629367069744	Marionette	INFO	Listening on port 55945
-1629367070062	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+ exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
-1629367124544	geckodriver	INFO	Listening on 127.0.0.1:63604
-1629367124583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileotFAWb"
-*** You are running in headless mode.
-1629367124896	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileotFAWb\\search.json.mozlz4", (void 0)))
-1629367125838	Marionette	INFO	Listening on port 63609
-1629367126129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+ored for this session
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 1629367153251	Marionette	INFO	Stopped listening on port 63609
@@ -1317,13 +1329,17 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1629367222128	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
-
-1629367233369	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileLj7Zjx"
-*** You are running in headless mode.
-1629367233664	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofileLj7Zjx\\search.json.mozlz4", (void 0)))
-1629367234691	Marionette	INFO	Listening on port 61118
+console.error: services.settings: 
+  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
+console.error: services.settings: 
+  main/doh-providers local data was corrupted
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+Listening on port 61118
 1629367234922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
