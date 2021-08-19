@@ -1,4 +1,5 @@
-from api.classes.ScraperClass import Scraper
+from api.classes.ScraperClass import Scraper,decompress,compress
+
 import redis
 import unittest
 from selenium import webdriver
@@ -7,7 +8,7 @@ import time
 
 firefox_options = webdriver.FirefoxOptions()
 firefox_options.headless = True
-redis_con = redis.Redis()
+redis_con1 = redis.Redis(port=6379)
 
 class TestScraper(unittest.TestCase):
 
@@ -105,8 +106,14 @@ class TestScraper(unittest.TestCase):
             return False
         return True
 
-
-
+    def test_scrape_page(self,timeout=10):
+        scraper = Scraper(search_key="test", worker_nr=0, location="")
+        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
+        scraper.url = 'https://indeed.com/jobs?q=test'
+        scraper.scrape_page(timeout= timeout,redis_con =redis_con1)
+        if decompress(redis_con1.get('undefined')).empty:
+            return 1
+        return 0
 
 if __name__ == '__main__':
     unittest.main()
