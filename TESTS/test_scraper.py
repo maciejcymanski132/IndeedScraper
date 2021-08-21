@@ -10,12 +10,17 @@ firefox_options = webdriver.FirefoxOptions()
 firefox_options.headless = True
 redis_con1 = redis.Redis(port=6379)
 
+def setup_scraper():
+    scraper = Scraper(search_key="test", worker_nr=0, location="")
+    scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
+    scraper.driver.get('https://indeed.com/jobs?q=test')
+    return scraper
+
+
 class TestScraper(unittest.TestCase):
 
     def test_next_page(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         scraper.check_for_pop_up()
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
@@ -24,9 +29,7 @@ class TestScraper(unittest.TestCase):
         scraper.driver.close()
 
     def test_check_for_pop(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
         time.sleep(5)
@@ -40,9 +43,7 @@ class TestScraper(unittest.TestCase):
             return 1
 
     def test_close_privacy_agreement(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         scraper.check_for_pop_up()
         try:
             agreement = scraper.driver.find_element_by_id("onetrust-banner-sdk")
@@ -53,9 +54,7 @@ class TestScraper(unittest.TestCase):
             return 1
 
     def test_find_offers(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         try:
             results_column = scraper.driver.find_element_by_id("resultsCol")
             results = results_column.find_elements_by_class_name("summary")
@@ -63,25 +62,23 @@ class TestScraper(unittest.TestCase):
                 results = results_column.find_elements_by_class_name(
                     "jobCardShelfContainer"
                 )
-            scraper.driver.close()
+            if not results:
+                scraper.driver.close()
+                return 0
             return 1
         except selenium.common.exceptions.NoSuchElementException as exception:
             scraper.driver.close()
             return 0
 
     def test_open_offer(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         offers = scraper.find_offers()
         url = scraper.driver.current_url
         offers.pop().click()
         self.assertFalse(url==scraper.driver.current_url)
 
     def test_extract_description(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         offers = scraper.find_offers()
         offer = offers.pop()
         offer.click()
@@ -94,9 +91,7 @@ class TestScraper(unittest.TestCase):
             return 0
 
     def test_save_job_description(self):
-        scraper = Scraper(search_key="test", worker_nr=0, location="")
-        scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
-        scraper.driver.get('https://indeed.com/jobs?q=test')
+        scraper = setup_scraper()
         offers = scraper.find_offers()
         offer = offers.pop()
         scraper.save_job_description(offer=offer,index=0)

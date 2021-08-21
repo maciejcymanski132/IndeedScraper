@@ -1614,8 +1614,8 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
- exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ncaught exception: undefined
 console.error: services.settings: 
   main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
 console.error: services.settings: 
@@ -1628,12 +1628,12 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-1629373129986	geckodriver	INFO	Listening on 127.0.0.1:60948
-1629373130001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofilelhMkM7"
-*** You are running in headless mode.
-1629373130363	Marionette	INFO	Marionette enabled
-[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofilelhMkM7\\search.json.mozlz4", (void 0)))
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1629472028253	Marionette	INFO	Stopped listening on port 60727
+[Parent 34980, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+e exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofilelhMkM7\\search.json.mozlz4", (void 0)))
 1629373131406	Marionette	INFO	Listening on port 60953
 1629373131557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: , line 0: uncaught exception: undefined
@@ -1712,8 +1712,8 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
- exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ncaught exception: undefined
 console.error: services.settings: 
   main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
 console.error: services.settings: 
@@ -1726,9 +1726,9 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ored for this session
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+Exiting due to channel error.
+avaScript error: , line 0: uncaught exception: undefined
 1629373623041	Marionette	INFO	Stopped listening on port 60911
 JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
 
@@ -1812,24 +1812,8 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ored for this session
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
-JavaScript error: , line 0: uncaught exception: undefined
-console.error: services.settings: 
-  main/doh-providers Signature failed  InvalidSignatureError: Invalid content signature (main/doh-providers)
-console.error: services.settings: 
-  main/doh-providers local data was corrupted
-console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
-console.error: services.settings: 
-  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
-console.error: services.settings: 
-  main/doh-config local data was corrupted
-console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
-console.log: WebExtensions: reset-default-search: starting.
-console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ored for this session
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 console.error: services.settings: 
@@ -1844,8 +1828,8 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ored for this session
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 console.error: services.settings: 
@@ -1860,8 +1844,21 @@ console.error: services.settings:
 console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-ored for this session
-JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1629472024769	Marionette	INFO	Stopped listening on port 60171
+[Parent 17840, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+. Retry from scratch
+console.error: services.settings: 
+  main/doh-config Signature failed  InvalidSignatureError: Invalid content signature (main/doh-config)
+console.error: services.settings: 
+  main/doh-config local data was corrupted
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+ncaught exception: undefined
 JavaScript error: , line 0: uncaught exception: undefined
 1629374433699	geckodriver	INFO	Listening on 127.0.0.1:63085
 1629374433732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Cyman\\AppData\\Local\\Temp\\rust_mozprofiletmhLil"
