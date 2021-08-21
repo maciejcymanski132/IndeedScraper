@@ -1,16 +1,20 @@
-from api.classes.ScraperClass import Scraper,decompress,compress
-
+from api.classes.ScraperClass import Scraper,decompress,compress,draw_proxy
+from api.classes.proxies import proxy_list
 import redis
 import unittest
 from selenium import webdriver
 import selenium
 import time
 
-firefox_options = webdriver.FirefoxOptions()
-firefox_options.headless = True
+
 redis_con1 = redis.Redis(port=6379)
+firefox_options = webdriver.FirefoxOptions()
+firefox_options.headless = False
+firefox_options.add_argument(f'--proxy-server={draw_proxy(proxy_list)}')
+
 
 def setup_scraper():
+
     scraper = Scraper(search_key="test", worker_nr=0, location="")
     scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
     scraper.driver.get('https://indeed.com/jobs?q=test')

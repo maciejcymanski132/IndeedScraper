@@ -1,0 +1,8 @@
+2021-08-21 12:37:34,660:CRITICAL:Function: find_offers() havent proceed in worker0Exception:Message: Unable to locate element: [id="resultsCol"]
+
+2021-08-21 12:37:54,106:CRITICAL:Function: find_offers() havent proceed in worker0Exception:Message: Unable to locate element: [id="resultsCol"]
+
+2021-08-21 12:44:56,304:CRITICAL:Function: find_offers() havent proceed in worker0Exception:Message: Unable to locate element: [id="resultsCol"]
+
+2021-08-21 12:49:38,874:CRITICAL:Function: find_offers() havent proceed in worker0Exception:Message: Unable to locate element: [id="resultsCol"]
+

@@ -10,6 +10,9 @@ except ModuleNotFoundError:
     from classes.proxies import proxy_list
     from classes.SwappedFramesClass import *
 
+
+
+
 compressed_df = zlib.compress(pickle.dumps(pd.DataFrame()))
 used_proxies = []
 
@@ -54,6 +57,8 @@ def draw_proxy(proxy_list: list) -> str:
                 break
             proxy = proxy_list[random.randint(0, len(proxy_list) - 1)]
     return proxy
+
+
 
 
 class Scraper:
@@ -155,11 +160,10 @@ class Scraper:
                     f"Function: find_offers() havent proceed in worker{self.worker_nr}"
                     f"Exception:{exception}"
                 )
-                raise Exception('NoOffersFound')
-                # self.proxy = draw_proxy(proxy_list)
-                # self.driver.close()
-                # self.driver = webdriver.Firefox()
-                # self.scrape_page(timeout=10)
+                self.proxy = draw_proxy(proxy_list)
+                self.driver.close()
+                self.driver = webdriver.Firefox()
+                self.scrape_page(timeout=10)
 
 
     def open_offer(self, offer, time_limit: int) -> bool:
@@ -245,23 +249,22 @@ class Scraper:
         :return:
         """
         if not hasattr(self,'driver'):
+            firefox_options.add_argument('--proxy-server=%s' % self.proxy)
             self.setup_driver(webdriver.Remote(
                 command_executor='http://selenium:4444/wd/hub',
                 options=webdriver.FirefoxOptions()))
         self.driver.get(self.url)
         self.driver.set_page_load_timeout(timeout)
         self.check_for_pop_up()
-        try:
-            offer_hrefs = self.find_offers()
-            for i in range(0, 2):
-                self.save_job_description(offer_hrefs[i], index=i)
-                if i % 5 == 0:
-                    time.sleep(random.randint(5, 8))
-                time.sleep(3)
-            self.save_results(redis_con)
-            self.driver.close()
-        except 'NoOffersFound':
-            self.driver.close()
+        offer_hrefs = self.find_offers()
+        for i in range(0, len(offer_hrefs)):
+            self.save_job_description(offer_hrefs[i], index=i)
+            if i % 5 == 0:
+                time.sleep(random.randint(5, 8))
+            time.sleep(3)
+        self.save_results(redis_con)
+        self.driver.close()
+
 
 
     def save_results(self,redis_con) -> None:
