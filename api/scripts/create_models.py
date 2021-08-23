@@ -1,7 +1,6 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem import WordNetLemmatizer
 import pandas as pd
-from sklearn.pipeline import Pipeline
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 import zlib,pickle,re
@@ -58,40 +57,32 @@ def decompress(dataframe: compressed_df) -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-    try:
-        with open('text_classifier', 'rb') as training_model:
-            model = pickle.load(training_model)
-        with open('vectorizer', 'rb') as vectorizer:
-            vectorizer = pickle.load(vectorizer)
-        print(model.predict(vectorizer.transform(['React'])))
+    redis_con = redis.Redis()
+    stemmer = WordNetLemmatizer()
 
-    except FileNotFoundError:
-        redis_con = redis.Redis()
-        stemmer = WordNetLemmatizer()
+    frontend_dev = decompress(redis_con.get('frontend developer'))
+    dev_ops = decompress(redis_con.get('dev ops'))
+    soft_eng = decompress(redis_con.get('software engineer'))
+    tester = decompress(redis_con.get('tester'))
+    data_scientist = decompress(redis_con.get('data scientist'))
 
-        frontend_dev = decompress(redis_con.get('frontend developer'))
-        dev_ops = decompress(redis_con.get('dev ops'))
-        soft_eng = decompress(redis_con.get('software engineer'))
-        tester = decompress(redis_con.get('tester'))
-        data_scientist = decompress(redis_con.get('data scientist'))
-
-        df = pd.concat([soft_eng,tester,data_scientist,frontend_dev,dev_ops])
-        preprocess_text(df)
+    df = pd.concat([soft_eng,tester,data_scientist,frontend_dev,dev_ops])
+    preprocess_text(df)
 
 
 
-        X,y = df.text,df.label
-        vectorizer = TfidfVectorizer(max_features=3000)
-        vec = vectorizer.fit_transform(df['text']).toarray()
-        X_train, X_test, y_train, y_test = train_test_split(vec, y, test_size=0.2,
-                                                            random_state=42)
+    X,y = df.text,df.label
+    vectorizer = TfidfVectorizer(max_features=3000)
+    vec = vectorizer.fit_transform(df['text']).toarray()
+    X_train, X_test, y_train, y_test = train_test_split(vec, y, test_size=0.2,
+                                                        random_state=42)
 
-        nb = MultinomialNB()
-        nb.fit(X_train, y_train)
+    nb = MultinomialNB()
+    nb.fit(X_train, y_train)
 
 
-        with open('text_classifier', 'wb') as picklefile:
-           pickle.dump(nb,picklefile)
+    with open('text_classifier', 'wb') as picklefile:
+        pickle.dump(nb,picklefile)
 
-        with open('vectorizer', 'wb') as picklefile:
-           pickle.dump(vectorizer,picklefile)
+    with open('vectorizer', 'wb') as picklefile:
+        pickle.dump(vectorizer,picklefile)

@@ -1,16 +1,12 @@
-from selenium import common
+from selenium import common,webdriver
+import selenium
 from joblib import Parallel, delayed
 import pickle, random,  time, zlib
 import pandas as pd
 import redis
-try:
-    from api.classes.proxies import proxy_list
-    from api.classes.SwappedFramesClass import *
-except ModuleNotFoundError:
-    from classes.proxies import proxy_list
-    from classes.SwappedFramesClass import *
-
-
+from classes.proxies import proxy_list
+from classes.SwappedFramesClass import *
+import logging
 
 
 compressed_df = zlib.compress(pickle.dumps(pd.DataFrame()))
