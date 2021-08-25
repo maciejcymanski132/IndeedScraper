@@ -24,15 +24,22 @@ def setup_scraper():
 class TestScraper(unittest.TestCase):
 
     def test_next_page(self):
+        """
+        Test if scraper swaps to next page after using next_page by observing
+        if url changes
+        """
         scraper = setup_scraper()
         scraper.check_for_pop_up()
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
         self.assertEqual('https://www.indeed.com/jobs?q=test&start=10',
-                         scraper.driver.current_url[0:43],"nice")
+                         scraper.driver.current_url[0:43])
         scraper.driver.close()
 
     def test_check_for_pop(self):
+        """
+        Test which closes screen popup after swapping to next page
+        """
         scraper = setup_scraper()
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
@@ -47,6 +54,10 @@ class TestScraper(unittest.TestCase):
             return 1
 
     def test_close_privacy_agreement(self):
+        """
+        Test checking if privacy agreement still appears after closing it with
+        check_for_pop_up() function
+        """
         scraper = setup_scraper()
         scraper.check_for_pop_up()
         try:
@@ -58,6 +69,9 @@ class TestScraper(unittest.TestCase):
             return 1
 
     def test_find_offers(self):
+        """
+        Test checking if scraper can properly find resultCol with job offers
+        """
         scraper = setup_scraper()
         try:
             results_column = scraper.driver.find_element_by_id("resultsCol")
@@ -75,6 +89,10 @@ class TestScraper(unittest.TestCase):
             return 0
 
     def test_open_offer(self):
+        """
+        Test if scraper open offers after using open_offer by observing
+        if url changes
+        """
         scraper = setup_scraper()
         offers = scraper.find_offers()
         url = scraper.driver.current_url
@@ -82,6 +100,9 @@ class TestScraper(unittest.TestCase):
         self.assertFalse(url==scraper.driver.current_url)
 
     def test_extract_description(self):
+        """
+        Test checks if scraper properly extract job description from opened offer
+        """
         scraper = setup_scraper()
         offers = scraper.find_offers()
         offer = offers.pop()
@@ -95,6 +116,10 @@ class TestScraper(unittest.TestCase):
             return 0
 
     def test_save_job_description(self):
+        """
+        Test checks if save_job_description proceed properly and saves result
+        to database
+        """
         scraper = setup_scraper()
         offers = scraper.find_offers()
         offer = offers.pop()
@@ -106,10 +131,14 @@ class TestScraper(unittest.TestCase):
         return True
 
     def test_scrape_page(self,timeout=10):
+        """
+        Test checking if scraping worked out and if results are saved in
+        redis db
+        """
         scraper = Scraper(search_key="test", worker_nr=0, location="")
         scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
         scraper.url = 'https://indeed.com/jobs?q=test'
-        scraper.scrape_page(timeout= timeout,redis_con =redis_con1)
+        scraper.scrape_page(timeout=timeout,redis_con =redis_con1)
         if decompress(redis_con1.get('undefined')).empty:
             return 1
         return 0
