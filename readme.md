@@ -20,3 +20,10 @@ Technologies used in project:
 - Docker/Docker-compose
 - TravisCI
 - Redis
+
+To run:
+
+You must have docker and docker-compose installed on your machine
+
+docker-compose up
+inside of root folder and api is set up and ready
