@@ -2,6 +2,7 @@ import redis
 import pandas as pd
 from scripts.create_models import compress
 
+
 def set_keys(re_con):
     df = pd.DataFrame(columns=['label','text'])
     re_con.set('undefined',compress(df))

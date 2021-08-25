@@ -55,8 +55,6 @@ def draw_proxy(proxy_list: list) -> str:
     return proxy
 
 
-
-
 class Scraper:
 
     def __init__(self, worker_nr: int, search_key: str, location: str):
@@ -131,7 +129,7 @@ class Scraper:
 
         except selenium.common.exceptions.NoSuchElementException as exception:
             raise Exception(
-                f"Function: next_page() havent proceed in worker{self.worker_nr}"
+                f"Function: next_page() haven't proceed in worker{self.worker_nr}"
                 f"Exception:{exception}"
             )
 
@@ -160,7 +158,6 @@ class Scraper:
                 self.driver.close()
                 self.driver = webdriver.Firefox()
                 self.scrape_page(timeout=10)
-
 
     def open_offer(self, offer, time_limit: int) -> bool:
         """
@@ -238,17 +235,17 @@ class Scraper:
             except AttributeError:
                 self.results["offers"].append(job_desc)
 
-    def scrape_page(self, redis_con: redis.Redis, timeout: int) -> None:
+    def scrape_page(self, redis_connection: redis.Redis, timeout: int) -> None:
         """
         Function uses class functions to execute scraping single page procedure.
         :param timeout: Time given for page to load (seconds)
         :return:
         """
         if not hasattr(self,'driver'):
-            firefox_options.add_argument('--proxy-server=%s' % self.proxy)
+            firefox_options.add_argument('--proxy-server=%s' % self.proxy['proxy']['http'])
             self.setup_driver(webdriver.Remote(
                 command_executor='http://selenium:4444/wd/hub',
-                options=webdriver.FirefoxOptions()))
+                options=firefox_options))
         self.driver.get(self.url)
         self.driver.set_page_load_timeout(timeout)
         self.check_for_pop_up()
@@ -261,39 +258,25 @@ class Scraper:
         self.save_results(redis_con)
         self.driver.close()
 
-
-
-    def save_results(self,redis_con) -> None:
+    def save_results(self, redis_connection: redis.Redis()) -> None:
         """
         Functions add results of this worker to pandas dataframe
         assigned to this particular search inside of redis db server.
         :return: Function doesn't have any final outcome in return
         """
-        try:
-            search_df = decompress(redis_con.get(self.search_field))
-            db_docs = [doc for doc in search_df["text"]]
-            for doc in self.results["offers"]:
-                if doc not in db_docs:
-                    search_df = search_df.append(
-                        {"label": self.search_field, "text": doc}, ignore_index=True
-                    )
-            search_df = compress(search_df)
-            redis_con.set(self.search_field, search_df)
-            while True:
-                try:
-                    redis_con.bgsave()
-                    break
-                except redis.exceptions.ResponseError:
-                    time.sleep(5)
-        except TypeError:
-            search_df = decompress(redis_con.get("undefined"))
-            for doc in self.results["offers"]:
-                search_df = search_df.append(
-                    {"label": "undefined", "text": doc}, ignore_index=True
-                )
-            search_df = compress(search_df)
-            redis_con.set("undefined", search_df)
-            redis_con.bgsave()
+        search_df = pd.DataFrame(columns=['label', 'text'])
+        for doc in self.results["offers"]:
+            search_df = search_df.append(
+                {"label": self.search_field, "text": doc}, ignore_index=True
+            )
+        search_df = compress(search_df)
+        redis_connection.set(self.search_field, search_df)
+        while True:
+            try:
+                redis_con.bgsave()
+                break
+            except redis.exceptions.ResponseError:
+                time.sleep(2)
 
 
 def scrape(page: int, work: str) -> None:
@@ -305,18 +288,15 @@ def scrape(page: int, work: str) -> None:
     :param work:Searched job description
     :return:
     """
-
     scraper = Scraper(worker_nr=page, search_key=work, location="")
-
     try:
-        scraper.scrape_page(redis_con,timeout=10)
+        scraper.scrape_page(redis_con, timeout=10)
     except selenium.common.exceptions.StaleElementReferenceException:
         logging.critical(
-            f"Page lost its content during the work in {scraper.worker_nr}"
+            f"Page lost its content during the work"
         )
     except selenium.common.exceptions.WebDriverException:
         scraper.driver.close()
-        scraper.driver = webdriver.Firefox()
         scraper.proxy = draw_proxy(proxy_list)
         scraper.scrape_page(timeout=10)
     else:
