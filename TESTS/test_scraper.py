@@ -29,7 +29,7 @@ class TestScraper(unittest.TestCase):
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
         self.assertEqual('https://www.indeed.com/jobs?q=test&start=10',
-                         scraper.driver.current_url[0:43],"nice")
+                         scraper.driver.current_url[0:43])
         scraper.driver.close()
 
     def test_check_for_pop(self):
