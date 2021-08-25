@@ -7,7 +7,6 @@ import selenium
 import time
 
 
-redis_con1 = redis.Redis(port=6379)
 firefox_options = webdriver.FirefoxOptions()
 firefox_options.headless = False
 firefox_options.add_argument(f'--proxy-server={draw_proxy(proxy_list)}')
@@ -43,15 +42,14 @@ class TestScraper(unittest.TestCase):
         scraper = setup_scraper()
         scraper.close_privacy_agreement()
         scraper.next_page(time_limit=10)
-        time.sleep(5)
+        time.sleep(3)
         scraper.check_for_pop_up()
+        close_pop_up = scraper.driver.find_elements_by_id("popover-x")
         try:
-            close_pop_up = scraper.driver.find_element_by_id("popover-x")
-            scraper.driver.close()
-            return 0
-        except selenium.common.exceptions.NoSuchElementException:
-            scraper.driver.close()
-            return 1
+            self.assertFalse(close_pop_up[0].is_displayed())
+        except IndexError:
+            raise Exception("Pop up havent appeared at all")
+        scraper.driver.close()
 
     def test_close_privacy_agreement(self):
         """
@@ -60,33 +58,23 @@ class TestScraper(unittest.TestCase):
         """
         scraper = setup_scraper()
         scraper.check_for_pop_up()
-        try:
-            agreement = scraper.driver.find_element_by_id("onetrust-banner-sdk")
-            scraper.driver.close()
-            return 0
-        except selenium.common.exceptions.NoSuchElementException:
-            scraper.driver.close()
-            return 1
-
+        agreement = scraper.driver.find_elements_by_id("onetrust-banner-sdk")
+        self.assertFalse(agreement)
+        scraper.driver.close()
+    #
     def test_find_offers(self):
         """
         Test checking if scraper can properly find resultCol with job offers
         """
         scraper = setup_scraper()
-        try:
-            results_column = scraper.driver.find_element_by_id("resultsCol")
-            results = results_column.find_elements_by_class_name("summary")
-            if not results:
-                results = results_column.find_elements_by_class_name(
-                    "jobCardShelfContainer"
-                )
-            if not results:
-                scraper.driver.close()
-                return 0
-            return 1
-        except selenium.common.exceptions.NoSuchElementException as exception:
-            scraper.driver.close()
-            return 0
+        results_column = scraper.driver.find_elements_by_id("resultsCol")
+        results = results_column[0].find_elements_by_class_name("summary")
+        if not results:
+            results = results_column[0].find_elements_by_class_name(
+                "jobCardShelfContainer"
+            )
+        self.assertTrue(results)
+        scraper.driver.close()
 
     def test_open_offer(self):
         """
@@ -97,7 +85,8 @@ class TestScraper(unittest.TestCase):
         offers = scraper.find_offers()
         url = scraper.driver.current_url
         offers.pop().click()
-        self.assertFalse(url==scraper.driver.current_url)
+        self.assertFalse(url == scraper.driver.current_url)
+        scraper.driver.close()
 
     def test_extract_description(self):
         """
@@ -105,15 +94,15 @@ class TestScraper(unittest.TestCase):
         """
         scraper = setup_scraper()
         offers = scraper.find_offers()
-        offer = offers.pop()
+        offer = offers.pop(5)
         offer.click()
         try:
             job_desc = scraper.extract_description(time_limit=5)
-            scraper.driver.close()
-            return 1
+            self.assertTrue(job_desc)
         except selenium.common.exceptions.NoSuchElementException:
             scraper.driver.close()
-            return 0
+            raise Exception("Scraper failed at extracting job")
+        scraper.driver.close()
 
     def test_save_job_description(self):
         """
@@ -126,9 +115,8 @@ class TestScraper(unittest.TestCase):
         scraper.save_job_description(offer=offer,index=0)
         if not scraper.results["offers"]:
             scraper.save_job_description(offer=offers.pop(),index=1)
-        if not scraper.results["offers"]:
-            return False
-        return True
+        self.assertTrue(scraper.results["offers"])
+        scraper.driver.close()
 
     def test_scrape_page(self,timeout=10):
         """
@@ -138,10 +126,12 @@ class TestScraper(unittest.TestCase):
         scraper = Scraper(search_key="test", worker_nr=0, location="")
         scraper.setup_driver(webdriver.Firefox(firefox_options=firefox_options))
         scraper.url = 'https://indeed.com/jobs?q=test'
-        scraper.scrape_page(timeout=timeout,redis_con =redis_con1)
-        if decompress(redis_con1.get('undefined')).empty:
-            return 1
-        return 0
+        r = redis.Redis(host="127.0.0.1",port=6379)
+        scraper.scrape_page(timeout=timeout, redis_connection=r)
+        self.assertFalse(decompress(redis_con1.get("test")).empty)
+        redis_con1.delete("test")
+        scraper.driver.close()
+
 
 if __name__ == '__main__':
     unittest.main()

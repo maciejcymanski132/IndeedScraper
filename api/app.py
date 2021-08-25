@@ -36,8 +36,8 @@ async def jobs(workers: int = 1, pages: int = 1, work: str = ""):
     for index, row in result.iterrows():
         row.label = model.predict(vectorizer.transform([row.text]))
         response["job_offers"][row.label[0]].update({index: row.text})
-    redis_con.delete(work)
-    redis_con.set(work, compress(pd.DataFrame(columns=['label', 'text'])))
+    # redis_con.delete(work)
+    # redis_con.set(work, compress(pd.DataFrame(columns=['label', 'text'])))
     while True:
         try:
             redis_con.bgsave()

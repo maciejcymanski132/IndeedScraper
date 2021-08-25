@@ -6,3 +6,12 @@
 
 2021-08-21 12:49:38,874:CRITICAL:Function: find_offers() havent proceed in worker0Exception:Message: Unable to locate element: [id="resultsCol"]
 
+2021-08-25 12:16:27,766:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=9edf6db6d00cce77
+2021-08-25 12:29:10,107:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=82c397c0c94b7e2c
+2021-08-25 12:36:04,152:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=de4eac14b0df5153
+2021-08-25 13:35:04,354:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=11411454a5a7e5de
+2021-08-25 13:36:17,706:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=5c5162a3c722c036
+2021-08-25 13:37:43,957:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=5c5162a3c722c036
+2021-08-25 13:40:05,407:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=f882921f42abc4cd
+2021-08-25 13:41:27,883:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=4408b2be63098ddb
+2021-08-25 14:07:48,706:WARNING:Function: extract_description() havent proceed in worker0Couldnt find description in this offerhttps://www.indeed.com/q-test-jobs.html?vjk=4408b2be63098ddb
