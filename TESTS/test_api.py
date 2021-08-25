@@ -14,8 +14,10 @@ class TestApi(unittest.TestCase):
         response = requests.get(test_url)
         d = json.loads(response.content)
         for work in d.get('job_offers').keys():
-            self.assertTrue(d.get('job_offers').get(work))
-
+            try:
+                self.assertTrue(d.get('job_offers').get(work))
+            except AttributeError:
+                raise Exception('API returned invalid response')
 
     def test_false_job_scraped(self):
         """
@@ -25,8 +27,10 @@ class TestApi(unittest.TestCase):
         response = requests.get(test_url)
         d = json.loads(response.content)
         for work in d['job_offers'].keys():
-            self.assertFalse(d.get('job_offers').get(work))
-
+            try:
+                self.assertFalse(d.get('job_offers').get(work))
+            except AttributeError:
+                raise Exception('API returned invalid response')
 
     def test_job_asserting(self):
         """
@@ -36,7 +40,10 @@ class TestApi(unittest.TestCase):
         test_url = 'http://127.0.0.1:5000/jobs?workers=2&pages=2&work=software engineer'
         response = requests.get(test_url)
         d = json.loads(response.content)
-        self.assertTrue(d.get('job_offers').get('software engineer'))
+        try:
+            self.assertTrue(d.get('job_offers').get('software engineer'))
+        except AttributeError:
+            raise Exception('API returned invalid response')
 
     def test_job_asserting1(self):
         """
@@ -46,7 +53,10 @@ class TestApi(unittest.TestCase):
         test_url = 'http://127.0.0.1:5000/jobs?workers=2&pages=2&work=data scientist'
         response = requests.get(test_url)
         d = json.loads(response.content)
-        self.assertTrue(d.get('job_offers').get('data scientist'))
+        try:
+            self.assertTrue(d.get('job_offers').get('data scientist'))
+        except AttributeError:
+            raise Exception('API returned invalid response')
 
     def test_job_asserting2(self):
         """
@@ -56,7 +66,10 @@ class TestApi(unittest.TestCase):
         test_url = 'http://127.0.0.1:5000/jobs?workers=2&pages=2&work=frontend developer'
         response = requests.get(test_url)
         d = json.loads(response.content)
-        self.assertTrue(d.get('job_offers').get('frontend developer'))
+        try:
+            self.assertTrue(d.get('job_offers').get('frontend developer'))
+        except AttributeError:
+            raise Exception('API returned invalid response')
 
     def test_false_job_asserting(self):
         """
@@ -66,7 +79,10 @@ class TestApi(unittest.TestCase):
         test_url = 'http://127.0.0.1:5000/jobs?workers=2&pages=2&work=frontend developer'
         response = requests.get(test_url)
         d = json.loads(response.content)
-        self.assertFalse(d.get('job_offers').get('software engineer'))
+        try:
+            self.assertFalse(d.get('job_offers').get('software engineer'))
+        except AttributeError:
+            raise Exception('API returned invalid response')
 
     def test_false_job_asserting1(self):
         """
@@ -76,7 +92,10 @@ class TestApi(unittest.TestCase):
         test_url = 'http://127.0.0.1:5000/jobs?workers=2&pages=2&work=software engineer'
         response = requests.get(test_url)
         d = json.loads(response.content)
-        self.assertFalse(d.get('job_offers').get('frontend developer'))
+        try:
+            self.assertFalse(d.get('job_offers').get('frontend developer'))
+        except AttributeError:
+            raise Exception('API returned invalid response')
 
 
 if __name__ == '__main__':
